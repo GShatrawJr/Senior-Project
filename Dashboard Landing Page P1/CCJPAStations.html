@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles.css">
+   
+
+
+
+
+        <style>
+         
+
+            .d-none {
+                display: none;
+            }
+        </style>
+
+
+        <img align="middle" src="capitol-corridor-logo-trim.webp" alt="" width="1600" height="300">
+
+    </head>
+
+
+    <body>
+        <script src="CCJPA.js"></script>
+
+
+       
+        
+       
+        <div class="menu">     
+            <label for="Station:"><h3>Station</label>
+            <select onchange="showImages(this)" id="Station">
+                <option value="000" selected=true >Select A Station</option>
+                <option value="COX">Colfax</option>
+                <option value="ARN">Auburn</option>
+                <option value="RLN">Rocklin</option>
+                <option value="RSV">Roseville</option>
+                <option value="SAC">Sacramento</option>
+                <option value="DAV">Davis</option>
+                <option value="FFV">Fairfield/Vacaville</option>
+                <option value="SUI">Suissun/Fairfield</option>
+                <option value="MTZ">Martinez</option>
+                <option value="RIC">Richmond-BART</option>
+                <option value="BKY">Berkeley</option>
+                <option value="EMY">Emeryville</option>
+                <option value="OKJ">Oakland Jack London</option>
+                <option value="OAC">Oakland Coliseum-BART</option>
+                <option value="HAY">Hayward</option>
+                <option value="FMT">Fremont/Centerville</option>
+                <option value="GAC">Santa Clara/Great America</option>
+                <option value="SCC">Santa Clara/University</option>
+                <option value="SJC">San Jose</option>
+
+            </select>
+        </div>
+
+        <div align="top">
+            <label align="" for="Time:"><h2>Time</label>
+                <select onchange="showImages(this)" id="StationTime">
+                    <option value="000" selected=true >Not Implemented Yet</option>
+                </select>
+                
+            </div>
+<hr />
+        <div id="StationPanel" class="StationPanel">
+            <div id="000" class="data">
+                <img src="ChooseStation.png" alt="Train521"/><span></span> 
+            </div>
+
+            <div id="COX" class="data d-none">
+                <label for="Colfax Station">Trains available at Colfax Station:</label>
+                <div></div>
+                <img src="Train541.png" alt="Train521"/><span></span> 
+            </div>
+        
+            <div id="ARN" class="data d-none">
+                <label for="Auburn Station">Trains available at Auburn Station:</label>
+                <div></div>
+                <img src="Train527.png" alt="Train521"/><span></span> 
+                <img src="Train541.png" alt="Train521"/><span></span>
+            </div>
+
+            <div id="RLN" class="data d-none">
+                <label for="Rocklin Station">Trains available at Rocklin Station:</label>
+                <div></div>
+                <img src="Train527.png" alt="Train521"/><span></span> 
+                <img src="Train541.png" alt="Train521"/><span></span>
+            </div>
+
+            <div id="RSV" class="data d-none">
+                <label for="Roseville Station">Trains available at Roseville Station:</label>
+                <div></div>
+                <img src="Train523.png" alt="Train521"/><span></span> 
+                <img src="Train525.png" alt="Train521"/><span></span>
+                <img src="Train527.png" alt="Train521"/><span></span>
+                <img src="Train541.png" alt="Train521"/><span></span>
+            </div>
+
+            <div id="SAC" class="data d-none">
+                <label for="Sacramento Station">Trains available at Sacramento Station:</label>
+                <div></div>
+                <img src="Train521.png" alt="Train521"/><span></span> 
+                <img src="Train523.png" alt="Train521"/><span></span>
+                <img src="Train525.png" alt="Train521"/><span></span>
+                <img src="Train527.png" alt="Train521"/><span></span>
+                <img src="Train531.png" alt="Train521"/><span></span> 
+                <img src="Train541.png" alt="Train521"/><span></span>
+                <img src="Train543.png" alt="Train521"/><span></span>
+                <img src="Train545.png" alt="Train521"/><span></span>
+                <img src="Train547.png" alt="Train521"/><span></span> 
+                <img src="Train549.png" alt="Train521"/><span></span>
+                <img src="Train551.png" alt="Train521"/><span></span>
+            </div>
+
+            <div id="DAV" class="data d-none">
+                <label for="Davis Station">Trains available at Davis Station:</label>
+                <div></div>
+                <img src="Train521.png" alt="Train521"/><span></span> 
+                <img src="Train523.png" alt="Train521"/><span></span>
+                <img src="Train525.png" alt="Train521"/><span></span>
+                <img src="Train527.png" alt="Train521"/><span></span>
+                <img src="Train531.png" alt="Train521"/><span></span> 
+                <img src="Train541.png" alt="Train521"/><span></span>
+                <img src="Train543.png" alt="Train521"/><span></span>
+                <img src="Train545.png" alt="Train521"/><span></span>
+                <img src="Train547.png" alt="Train521"/><span></span> 
+                <img src="Train549.png" alt="Train521"/><span></span>
+                <img src="Train551.png" alt="Train521"/><span></span>
+            </div>
+
+            <div id="FFV" class="data d-none">
+                <label for="Fairfield Vacaville Station">Trains available at Fairfield/Vacaville Station:</label>
+                <div></div>
+                <img src="Train521.png" alt="Train521"/><span></span> 
+                <img src="Train523.png" alt="Train521"/><span></span>
+                <img src="Train525.png" alt="Train521"/><span></span>
+                <img src="Train527.png" alt="Train521"/><span></span>
+                <img src="Train531.png" alt="Train521"/><span></span> 
+                <img src="Train541.png" alt="Train521"/><span></span>
+                <img src="Train543.png" alt="Train521"/><span></span>
+                <img src="Train545.png" alt="Train521"/><span></span>
+                <img src="Train547.png" alt="Train521"/><span></span> 
+                <img src="Train549.png" alt="Train521"/><span></span>
+                <img src="Train551.png" alt="Train521"/><span></span>
+            </div>
+
+            <div id="SUI" class="data d-none">
+                <label for="Suissun Fairfield Station">Trains available at Suissun/Fairfied Station:</label>
+                <div></div>
+                <img src="Train521.png" alt="Train521"/><span></span> 
+                <img src="Train523.png" alt="Train521"/><span></span>
+                <img src="Train525.png" alt="Train521"/><span></span>
+                <img src="Train527.png" alt="Train521"/><span></span>
+                <img src="Train531.png" alt="Train521"/><span></span> 
+                <img src="Train541.png" alt="Train521"/><span></span>
+                <img src="Train543.png" alt="Train521"/><span></span>
+                <img src="Train545.png" alt="Train521"/><span></span>
+                <img src="Train547.png" alt="Train521"/><span></span> 
+                <img src="Train549.png" alt="Train521"/><span></span>
+                <img src="Train551.png" alt="Train521"/><span></span>
+            </div>
+
+            <div id="MTZ" class="data d-none">
+                <label for="Martinez Station">Trains available at Martinez Station:</label>
+                <div></div>
+                <img src="Train521.png" alt="Train521"/><span></span> 
+                <img src="Train523.png" alt="Train521"/><span></span>
+                <img src="Train525.png" alt="Train521"/><span></span>
+                <img src="Train527.png" alt="Train521"/><span></span>
+                <img src="Train531.png" alt="Train521"/><span></span> 
+                <img src="Train541.png" alt="Train521"/><span></span>
+                <img src="Train543.png" alt="Train521"/><span></span>
+                <img src="Train545.png" alt="Train521"/><span></span>
+                <img src="Train547.png" alt="Train521"/><span></span> 
+                <img src="Train549.png" alt="Train521"/><span></span>
+                <img src="Train551.png" alt="Train521"/><span></span>
+            </div>
+
+            <div id="RIC" class="data d-none">
+                <label for="Richmond-BART Station">Trains available at Richmond-BART Station:</label>
+                <div></div>
+                <img src="Train521.png" alt="Train521"/><span></span> 
+                <img src="Train523.png" alt="Train521"/><span></span>
+                <img src="Train525.png" alt="Train521"/><span></span>
+                <img src="Train527.png" alt="Train521"/><span></span>
+                <img src="Train531.png" alt="Train521"/><span></span> 
+                <img src="Train541.png" alt="Train521"/><span></span>
+                <img src="Train543.png" alt="Train521"/><span></span>
+                <img src="Train545.png" alt="Train521"/><span></span>
+                <img src="Train547.png" alt="Train521"/><span></span> 
+                <img src="Train549.png" alt="Train521"/><span></span>
+                <img src="Train551.png" alt="Train521"/><span></span>
+            </div>
+
+            <div id="BKY" class="data d-none">
+                <label for="Berkeley Station">Trains available at Berkeley Station:</label>
+                <div></div>
+                <img src="Train521.png" alt="Train521"/><span></span> 
+                <img src="Train523.png" alt="Train521"/><span></span>
+                <img src="Train525.png" alt="Train521"/><span></span>
+                <img src="Train527.png" alt="Train521"/><span></span>
+                <img src="Train531.png" alt="Train521"/><span></span> 
+                <img src="Train541.png" alt="Train521"/><span></span>
+                <img src="Train543.png" alt="Train521"/><span></span>
+                <img src="Train545.png" alt="Train521"/><span></span>
+                <img src="Train547.png" alt="Train521"/><span></span> 
+                <img src="Train549.png" alt="Train521"/><span></span>
+                <img src="Train551.png" alt="Train521"/><span></span>
+            </div>
+
+            <div id="EMY" class="data d-none">
+                <label for="Emeryville Station">Trains available at Emeryville Station:</label>
+                <div></div>
+                <img src="Train521.png" alt="Train521"/><span></span> 
+                <img src="Train523.png" alt="Train521"/><span></span>
+                <img src="Train525.png" alt="Train521"/><span></span>
+                <img src="Train527.png" alt="Train521"/><span></span>
+                <img src="Train531.png" alt="Train521"/><span></span> 
+                <img src="Train541.png" alt="Train521"/><span></span>
+                <img src="Train543.png" alt="Train521"/><span></span>
+                <img src="Train545.png" alt="Train521"/><span></span>
+                <img src="Train547.png" alt="Train521"/><span></span> 
+                <img src="Train549.png" alt="Train521"/><span></span>
+                <img src="Train551.png" alt="Train521"/><span></span>
+            </div>
+
+            <div id="OKJ" class="data d-none">
+                <label for="Oakland Jack London Station">Trains available at Oakland Jack London Station:</label>
+                <div></div>
+                <img src="Train521.png" alt="Train521"/><span></span> 
+                <img src="Train523.png" alt="Train521"/><span></span>
+                <img src="Train525.png" alt="Train521"/><span></span>
+                <img src="Train527.png" alt="Train521"/><span></span>
+                <img src="Train531.png" alt="Train521"/><span></span> 
+                <img src="Train541.png" alt="Train521"/><span></span>
+                <img src="Train543.png" alt="Train521"/><span></span>
+                <img src="Train545.png" alt="Train521"/><span></span>
+                <img src="Train547.png" alt="Train521"/><span></span> 
+                <img src="Train549.png" alt="Train521"/><span></span>
+                <img src="Train551.png" alt="Train521"/><span></span>
+            </div>
+
+            <div id="OAC" class="data d-none">
+                <label for="Oakland Coliseum-BART Station">Trains available at Oakland Coliseum-BART Station:</label>
+                <div></div>
+                <img src="Train521.png" alt="Train521"/><span></span> 
+                <img src="Train523.png" alt="Train521"/><span></span>
+                <img src="Train527.png" alt="Train521"/><span></span>
+                <img src="Train531.png" alt="Train521"/><span></span> 
+                <img src="Train541.png" alt="Train521"/><span></span>
+                <img src="Train547.png" alt="Train521"/><span></span> 
+            </div>
+
+            <div id="HAY" class="data d-none">
+                <label for="Hayward Station">Trains available at Hayward Station:</label>
+                <div></div>
+                <img src="Train521.png" alt="Train521"/><span></span> 
+                <img src="Train523.png" alt="Train521"/><span></span>
+                <img src="Train527.png" alt="Train521"/><span></span>
+                <img src="Train531.png" alt="Train521"/><span></span> 
+                <img src="Train541.png" alt="Train521"/><span></span>
+                <img src="Train547.png" alt="Train521"/><span></span> 
+            </div>
+
+            <div id="FMT" class="data d-none">
+                <label for="Fremont Centerville Station">Trains available at Fremont/Centerville Station:</label>
+                <div></div>
+                <img src="Train521.png" alt="Train521"/><span></span> 
+                <img src="Train523.png" alt="Train521"/><span></span>
+                <img src="Train527.png" alt="Train521"/><span></span>
+                <img src="Train531.png" alt="Train521"/><span></span> 
+                <img src="Train541.png" alt="Train521"/><span></span>
+                <img src="Train547.png" alt="Train521"/><span></span> 
+            </div>
+
+            <div id="GAC" class="data d-none">
+                <label for="Santa Clara/Great America Station">Trains available at Santa Clara/Great America Station:</label>
+                <div></div>
+                <img src="Train521.png" alt="Train521"/><span></span> 
+                <img src="Train523.png" alt="Train521"/><span></span>
+                <img src="Train527.png" alt="Train521"/><span></span>
+                <img src="Train531.png" alt="Train521"/><span></span> 
+                <img src="Train541.png" alt="Train521"/><span></span>
+                <img src="Train547.png" alt="Train521"/><span></span> 
+            </div>
+
+            <div id="SCC" class="data d-none">
+                <label for="Santa Clara/University Station">Trains available at Santa Clara/University Station:</label>
+                <div></div>
+                <img src="Train521.png" alt="Train521"/><span></span> 
+                <img src="Train523.png" alt="Train521"/><span></span>
+                <img src="Train527.png" alt="Train521"/><span></span>
+                <img src="Train531.png" alt="Train521"/><span></span> 
+                <img src="Train541.png" alt="Train521"/><span></span>
+                <img src="Train547.png" alt="Train521"/><span></span> 
+            </div>
+
+            <div id="SJC" class="data d-none">
+                <label for="San Jose Station">Trains available at San Jose Station:</label>
+                <div></div>
+                <img src="Train521.png" alt="Train521"/><span></span> 
+                <img src="Train523.png" alt="Train521"/><span></span>
+                <img src="Train527.png" alt="Train521"/><span></span>
+                <img src="Train531.png" alt="Train521"/><span></span> 
+                <img src="Train541.png" alt="Train521"/><span></span>
+                <img src="Train547.png" alt="Train521"/><span></span> 
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+    <script>
+        function showImages(dataItem){
+            console.log(dataItem);
+            console.log(dataItem.value);
+
+            const data = document.querySelectorAll('.data');
+
+            //hide all by default
+            data.forEach(hideAll);
+            function hideAll(datatag){
+                datatag.classList.add('d-none');
+
+            }
+
+            console.log(data);
+            console.log(data.length);
+
+            //showall if all selected
+            if(dataItem.value == 'All'){
+                data.forEach(showAll);
+                function showAll(datatag){
+                    datatag.classList.remove('d-none');
+                }
+            }
+
+            if(dataItem.value !== 'All'){
+                document.getElementById(dataItem.value).classList.remove('d-none');
+            }
+
+        }
+
+
+    </script>
+        
+
+      
+        
+        <hr />
+            
+
+            
+            <div>
+        
+            </div>
+
+    
+        </div>
+
+    </body>
+</html>
